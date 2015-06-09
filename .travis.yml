@@ -1,0 +1,23 @@
+# http://docs.travis-ci.com/user/workers/container-based-infrastructure/
+sudo: false
+
+# http://docs.travis-ci.com/user/languages/javascript-with-nodejs/
+language: node_js
+node_js:
+  - 'iojs'
+  - '0.12'
+  - '0.10'
+before_script:
+  - 'npm install -g bower grunt-cli'
+  - 'bower install'
+
+# http://docs.travis-ci.com/user/deployment/openshift/
+#deploy:
+#  provider: openshift
+#  user: satspeedy@hotmail.com
+#  password:
+#    secure: glHSj3JcjmagmyN3bwbhszG3EvchJfMb/kaR2wAUK6dCx8zsrIsOel8PBBzTKjPLJu594dpe3M8EjD0I69+TZdQX43uevh/sGYO7YoK+X9nYzSteBWa6dMqSK67pCyYBFlAMJ9/hpg2g9wVVeWUjIltyDSNkCkFZC/vqFc+uEo8=
+#  app: scheckcheck
+#  domain: satspeedy
+#  on:
+#    repo: satspeedy/scheckcheck-ui

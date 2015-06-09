@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="scheckcheckUiApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">Sie verwenden einen <strong>alten</strong> Browser. Bitte <a href="http://browsehappy.com/">aktualisieren Sie ihren Browser</a> um besser surfen zu können.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <nav class="navbar navbar-static">
+      <div class="container">
+        <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+        <div class="nav-collapse collase">
+          <ul class="nav navbar-nav">
+            <li><a href="#/" class="glyphicon glyphicon-home"></a></li>
+            <li><a href="#/bildungstraegerList">Bildungsträger</a></li>
+            <li><a href="#/bildungsmassnahmeList">Bildungsmaßnahme</a></li>
+            <li><a href="#/bewertungErstellen">Bewertung erstellen</a></li>
+          </ul>
+          <ul class="nav navbar-right navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+              <ul class="dropdown-menu" style="padding:12px;">
+                <form class="form-inline">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Suchen">
+                    <div class="input-group-btn">
+                      <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                  </div>
+                </form>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> <i class="glyphicon glyphicon-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#/login">Login</a></li>
+                <li><a href="#/profil">Profil</a></li>
+                <li class="divider"></li>
+                <li><a href="#/about">Über uns</a></li>
+                <li><a href="#/impressum">Impressum</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav><!-- /.navbar -->
+
+    <header class="masthead">
+      <div class="container">
+        <div class="row">
+          <div class="col col-sm-6">
+            <h1><a href="#/" title="scroll down for your viewing pleasure">ScheckCheck</a>
+              <p class="lead">Social Media Power gegen Bildungsträger</p></h1>
+          </div>
+          <div class="col col-sm-6">
+            <div class="well pull-right">
+              <img src="images/logo.png" alt="logo">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col col-sm-12">
+
+            <div class="panel">
+              <div class="panel-body">
+                Wir begrüßen die Social Media Welt <span class="glyphicon glyphicon-heart-empty"></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+    <div ng-view=""></div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p>ScheckCheck ist mit <span class="glyphicon glyphicon-heart"></span> dabei</p>
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/angular-ui-sortable/sortable.js"></script>
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/login.js"></script>
+        <script src="scripts/controllers/profil.js"></script>
+        <script src="scripts/controllers/bildungstraegerList.js"></script>
+        <script src="scripts/controllers/bildungsmassnahmeList.js"></script>
+        <script src="scripts/controllers/bewertungErstellen.js"></script>
+        <script src="scripts/controllers/bildungstraeger.js"></script>
+        <script src="scripts/controllers/bildungsmassnahme.js"></script>
+        <script src="scripts/controllers/bewertung.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
