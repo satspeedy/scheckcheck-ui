@@ -8,10 +8,9 @@
  * Controller of the scheckcheckUiApp
  */
 angular.module('scheckcheckUiApp')
-  .controller('BildungstraegerListCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('BildungstraegerListCtrl', function ($scope, $http) {
+    $http.get('http://localhost:8080/scheckcheck/resources/bildungstraeger').
+      success(function(data) {
+        $scope.bildungstraegers = data;
+      });
   });

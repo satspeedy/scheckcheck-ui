@@ -6,10 +6,19 @@
         <h1>Bildungsmaßnahmen</h1>
 
         <table class="table table-hover">
-          <thead><tr><th>Name</th></tr></thead>
-          <tbody><tr><td><a href="#/bildungsmassnahme">Bildungsmaßnahme ONE</a></td></tr></tbody>
-          <tbody><tr><td><a href="#/bildungsmassnahme">Bildungsmaßnahme TWO</a></td></tr></tbody>
-          <tbody><tr><td><a href="#/bildungsmassnahme">Bildungsmaßnahme THREE</a></td></tr></tbody>
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Ort</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr ng-repeat="bildungsmassnahme in bildungsmassnahmen">
+            <td><a ng-href="#/bildungsmassnahme/{{bildungsmassnahme.id}}">{{ bildungsmassnahme.name }}</a></td>
+            <td>{{ bildungsmassnahme.ort }}</td>
+            <td>{{ bildungstraeger.beschreibung }}</td>
+          </tr>
+          </tbody>
         </table>
 
         <hr>

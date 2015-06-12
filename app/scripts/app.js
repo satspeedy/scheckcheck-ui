@@ -49,17 +49,21 @@ angular
         templateUrl: 'views/bewertungErstellen.html',
         controller: 'BewertungErstellenCtrl'
       })
-      .when('/bildungstraeger', {
+      .when('/bildungstraeger/:bildungstraegerId', {
         templateUrl: 'views/bildungstraeger.html',
         controller: 'BildungstraegerCtrl'
       })
-      .when('/bildungsmassnahme', {
+      .when('/bildungsmassnahme/:bildungsmassnahmeId', {
         templateUrl: 'views/bildungsmassnahme.html',
         controller: 'BildungsmassnahmeCtrl'
       })
       .when('/bewertung', {
         templateUrl: 'views/bewertung.html',
         controller: 'BewertungCtrl'
+      })
+      .when('/impressum', {
+        templateUrl: 'views/impressum.html',
+        controller: 'ImpressumCtrl'
       })
       .otherwise({
         redirectTo: '/'

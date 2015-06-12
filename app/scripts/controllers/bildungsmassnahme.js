@@ -8,10 +8,13 @@
  * Controller of the scheckcheckUiApp
  */
 angular.module('scheckcheckUiApp')
-  .controller('BildungsmassnahmeCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('BildungsmassnahmeCtrl', function ($scope, $http, $routeParams) {
+
+    var bildungsmassnahmeId = $routeParams.bildungsmassnahmeId;
+
+    $http.get('http://localhost:8080/scheckcheck/resources/bildungsmassnahme/' + bildungsmassnahmeId).
+      success(function(data) {
+        $scope.bildungsmassnahme = data;
+      });
   });
+

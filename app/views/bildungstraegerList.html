@@ -6,10 +6,20 @@
         <h1>Bildungsträger</h1>
 
         <table class="table table-hover">
-          <thead><tr><th>Name</th><th>Ort</th><th>Beschreibung</th></tr></thead>
-          <tbody><tr><td><a href="#/bildungstraeger">Bildungsträger ONE</a></td><td>..</td><td>..</td></tr></tbody>
-          <tbody><tr><td><a href="#/bildungstraeger">Bildungsträger TWO</a></td><td>..</td><td>..</td></tr></tbody>
-          <tbody><tr><td><a href="#/bildungstraeger">Bildungsträger THREE</a></td><td>..</td><td>..</td></tr></tbody>
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Ort</th>
+            <th>Beschreibung</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr ng-repeat="bildungstraeger in bildungstraegers">
+            <td><a ng-href="#/bildungstraeger/{{bildungstraeger.id}}">{{ bildungstraeger.name }}</a></td>
+            <td>{{ bildungstraeger.ort }}</td>
+            <td>{{ bildungstraeger.beschreibung }}</td>
+          </tr>
+          </tbody>
         </table>
 
         <hr>
