@@ -65,6 +65,10 @@ angular
         templateUrl: 'views/impressum.html',
         controller: 'ImpressumCtrl'
       })
+      .when('/kontaktfunktion/:teilnehmerId', {
+        templateUrl: 'views/kontaktfunktion.html',
+        controller: 'KontaktfunktionCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

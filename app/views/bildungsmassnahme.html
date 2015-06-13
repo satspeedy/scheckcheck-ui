@@ -75,10 +75,10 @@
                   {{ bewertung.bewertungDurchschnitt }}
                 </td>
                 <td>
-                  {{ bewertung.teilnehmer.vorname }}
+                  {{ bewertung.teilnehmer.username }}
                 </td>
                 <td>
-                  <a ng-if="bewertung.teilnehmer.kontaktaufnahmeKennzeichen" href="#emailModal" role="button" class="btn btn-default" data-toggle="modal"><i
+                  <a ng-if="bewertung.teilnehmer.kontaktaufnahmeKennzeichen" ng-href="#/kontaktfunktion/{{bewertung.teilnehmer.id}}" class="btn btn-default"><i
                     class="glyphicon glyphicon-envelope"></i></a>
                 </td>
               </tr>
