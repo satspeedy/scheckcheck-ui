@@ -78,7 +78,7 @@
                   {{ bewertung.teilnehmer.vorname }}
                 </td>
                 <td>
-                  <a href="#emailModal" role="button" class="btn btn-default" data-toggle="modal"><i
+                  <a ng-if="bewertung.teilnehmer.kontaktaufnahmeKennzeichen" href="#emailModal" role="button" class="btn btn-default" data-toggle="modal"><i
                     class="glyphicon glyphicon-envelope"></i></a>
                 </td>
               </tr>

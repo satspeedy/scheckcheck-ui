@@ -9,7 +9,7 @@
     </div>
     <div class="col col-sm-9">
       <div class="panel">
-        <h1>Bewertung von Teilnehmer XYZ <i class="glyphicon glyphicon-user"></i> abgegeben</h1>
+        <h1>Bewertung von <i class="glyphicon glyphicon-user"></i> {{ bewertung.teilnehmer.vorname}} {{bewertung.teilnehmer.nachname}} abgegeben</h1>
 
         <div class="row">
           <div class="col col-sm-6">
@@ -19,15 +19,7 @@
                 <label for="inputDatum1" class="col-lg-5 control-label">Datum</label>
 
                 <div class="col-lg-7">
-                  <input type="text" class="form-control" id="inputDatum1" placeholder="Datum">
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="inputBildungstraeger1" class="col-lg-5 control-label">Bildungsträger</label>
-
-                <div class="col-lg-7">
-                  <input type="text" class="form-control" id="inputBildungstraeger1" placeholder="Bildungsträger">
+                  <input type="text" class="form-control" id="inputDatum1" placeholder="Datum" ng-model="bewertung.datum" readonly="readonly"/>
                 </div>
               </div>
 
@@ -35,7 +27,7 @@
                 <label for="inputBildungsmassnahme1" class="col-lg-5 control-label">Bildungsmaßnahme</label>
 
                 <div class="col-lg-7">
-                  <input type="text" class="form-control" id="inputBildungsmassnahme1" placeholder="Bildungsmaßnahme">
+                  <input type="text" class="form-control" id="inputBildungsmassnahme1" placeholder="Bildungsmaßnahme" ng-model="bewertung.bildungsmassnahme.name" readonly="readonly"/>
                 </div>
               </div>
 
@@ -43,7 +35,7 @@
                 <label class="col-lg-5 control-label">Bewertung</label>
 
                 <div class="col-lg-7">
-                  <textarea rows="4" cols="50" />
+                  <textarea rows="4" cols="50" ng-model="bewertung.freiText" readonly="readonly"/>
                 </div>
               </div>
 
@@ -53,7 +45,7 @@
                 <label class="col-lg-5 control-label">Inhalt der Weiterbildung</label>
 
                 <div class="col-lg-7">
-                  <p>STERNE Inhalt der Weiterbildung</p>
+                  <p>{{ bewertung.bewertungInhaltWeiterbildung }}</p>
                 </div>
               </div>
 
@@ -61,7 +53,7 @@
                 <label class="col-lg-5 control-label">Umsetzung der Weiterbildung</label>
 
                 <div class="col-lg-7">
-                  <p>STERNE Umsetzung der Weiterbildung</p>
+                  <p>{{ bewertung.bewertungUmsetzungWeiterbildung }}</p>
                 </div>
               </div>
 
@@ -69,7 +61,7 @@
                 <label class="col-lg-5 control-label">Praxisnähe</label>
 
                 <div class="col-lg-7">
-                  <p>STERNE Praxisnähe</p>
+                  <p>{{ bewertung.bewertungPraxisnaehe }}</p>
                 </div>
               </div>
 
@@ -77,7 +69,7 @@
                 <label class="col-lg-5 control-label">Lehrveranstaltungen</label>
 
                 <div class="col-lg-7">
-                  <p>STERNE Lehrveranstaltungen</p>
+                  <p>{{ bewertung.bewertungLehrveranstaltungen }}</p>
                 </div>
               </div>
 
@@ -85,7 +77,7 @@
                 <label class="col-lg-5 control-label">Dozenten</label>
 
                 <div class="col-lg-7">
-                  <p>STERNE Dozenten</p>
+                  <p>{{ bewertung.bewertungDozenten }}</p>
                 </div>
               </div>
 
@@ -93,7 +85,7 @@
                 <label class="col-lg-5 control-label">Organisation</label>
 
                 <div class="col-lg-7">
-                  <p>STERNE Organisation</p>
+                  <p>{{ bewertung.bewertungOrganisation }}</p>
                 </div>
               </div>
 
@@ -101,7 +93,7 @@
                 <label class="col-lg-5 control-label">Ausstattung</label>
 
                 <div class="col-lg-7">
-                  <p>STERNE Ausstattung</p>
+                  <p>{{ bewertung.bewertungAusstattung }}</p>
                 </div>
               </div>
 

@@ -57,7 +57,7 @@ angular
         templateUrl: 'views/bildungsmassnahme.html',
         controller: 'BildungsmassnahmeCtrl'
       })
-      .when('/bewertung', {
+      .when('/bewertung/:bewertungId', {
         templateUrl: 'views/bewertung.html',
         controller: 'BewertungCtrl'
       })
