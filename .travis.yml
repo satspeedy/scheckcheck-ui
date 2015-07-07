@@ -17,7 +17,7 @@ deploy:
   user: satspeedy@hotmail.com
   password:
     secure: U3YBe9QV5YKLnMpyP6Pm1p9WayUdMar037WR6EVwkMjLRMP+uL2FCHw9ACk7FSP1fc8fWd59w244yFnUHzTxbXnNa/syPLo5VwQ9N75tHfrfdwKcG7AV60Cqg7B+C64eW/13P2Q4v2peCDJOo2eDTpj3sFBlnknn7zf72gBeVDEvPrAkFGDI5+Jzf6la2uvo0E+0fn4qltt9JfIRcenAdVgaD4Q7MJpw/rnlekJrmIHtm0OFscpRCXBLPrtr2I7i32/lo4QFhnlpAFTYjsdnkhFM3tiq6D0X8jq6VLd1mtck7xwtexdUNv1S7dl3FbbEgNqhNNIAS8UAkYHymRLkAVMSkroTKxyOQAx1ujFQx+jkgFv86e5XOcjrvWDOFuKplwQ1POJ8Dp2G8zk1+8h/pLvqcIZW4GTw5c647609G4SKXuMUm8JWGMcgRF/d3QBBYCZ7PJvtDxMdIEOam3RhrE96wQpChaxqsUf+T+TsanG6nP7gw5plRP3qqfvHowur6JyRDxVUzhp0El9cMCp/eKrkThFt/WlkN+TBCL8MPcx+c6mE5LK0od1l6Lzjr7Ko3SKfQubE9/0gld3zIaFVTY4FOmFS/CMGOUPn1m/vVtUKOdy2f5k4ATGmkEp6p2xYgO6Gp40+HqvyDiCkOLmOnPOZDPE7LMIG/Mba6PdosQs=
-  app: scheckcheck-ui
+  app: scheckcheck
   domain: satspeedy
   on:
     repo: satspeedy/scheckcheck-ui
