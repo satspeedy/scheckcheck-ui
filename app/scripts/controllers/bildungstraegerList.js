@@ -9,7 +9,7 @@
  */
 angular.module('scheckcheckUiApp')
   .controller('BildungstraegerListCtrl', function ($scope, $http) {
-    $http.get('http://localhost:8080/scheckcheck/resources/bildungstraeger').
+    $http.get('http://scheckcheck-satspeedy.rhcloud.com/resources/bildungstraeger').
       success(function(data) {
         $scope.bildungstraegers = data;
       });

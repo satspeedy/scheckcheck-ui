@@ -12,7 +12,7 @@ angular.module('scheckcheckUiApp')
 
     var bildungsmassnahmeId = $routeParams.bildungsmassnahmeId;
 
-    $http.get('http://localhost:8080/scheckcheck/resources/bildungsmassnahme/' + bildungsmassnahmeId).
+    $http.get('http://scheckcheck-satspeedy.rhcloud.com/resources/bildungsmassnahme/' + bildungsmassnahmeId).
       success(function(data) {
         $scope.bildungsmassnahme = data;
       });

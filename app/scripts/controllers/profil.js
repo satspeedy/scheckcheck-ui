@@ -9,7 +9,7 @@
  */
 angular.module('scheckcheckUiApp')
   .controller('ProfilCtrl', function ($scope, $http) {
-    $http.get('http://localhost:8080/scheckcheck/resources/teilnehmer/1').
+    $http.get('http://scheckcheck-satspeedy.rhcloud.com/resources/teilnehmer/1').
       success(function(data) {
         $scope.teilnehmer = data;
       });

@@ -23,15 +23,12 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
       })
       .when('/login', {
         templateUrl: 'views/login.html',
-        controller: 'LoginCtrl'
       })
       .when('/profil', {
         templateUrl: 'views/profil.html',
@@ -63,7 +60,6 @@ angular
       })
       .when('/impressum', {
         templateUrl: 'views/impressum.html',
-        controller: 'ImpressumCtrl'
       })
       .when('/kontaktfunktion/:teilnehmerId', {
         templateUrl: 'views/kontaktfunktion.html',

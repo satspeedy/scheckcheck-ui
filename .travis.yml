@@ -12,12 +12,12 @@ before_script:
   - 'bower install'
 
 # http://docs.travis-ci.com/user/deployment/openshift/
-deploy:
-  provider: openshift
-  user: satspeedy@hotmail.com
-  password:
-    secure: qy8C6ZJ2osJGwZCvR9ZnhMDGsLQof0dp43uXtPWQRV7COyoemT6beHS2BwIYwGwZT7G4D4qAk5/jkPSHQ241zKK2N1ZEP25WY58Cl8O5Ayr7jiKt0WNIEi7MuNwtRp1p615AznsIiAcs1HfiHttb+SyS0QQYYUNSnWiHbozn+dpfkO+SMnRNnNelZ4QjEfyCMmLkSx2vbGiIYxLOGqIKEfpamAr1cisjIORP3U0BNS53BtGmYyeynHRm9vrVq6XDBwUEMYD6S3rT7CQ6sU7SnUWfjo2yr24fESvTe2wxUDSsg+V/4D+618sFk9iPXgY4uGY1/rjgmIYcSrf3MSTxmNCDaSStJcFy3trKc6YC6sgRJm0LIoVV0GVinuYlOwl1mfH6Z90ERjGbHMbq3hfcB1lI1lbkhS8Y7L8OnAE3MIWq7nkH9Zc0YCfs54uD8xb4Xv3U+SPQE6d/eBTx5nomIcVmFzvdnTbkCSaWmf9cjaxBo/kWfdyvNJCH/vw6pw5zpWiL8KZB1R6Gko5GzfzVMdFDEtwzhZl2dX4tlN6T6gKsboCVwpchqi1KBoH3tnhpNSNL1IKKSOrVOFsL9y/llvQ+VTPh1d3Hfzt0lv0/3jOfAzbuB9mJjOXRFJOM7eEbKKMtLo2dEyGsM075h9cQJoHwbrBE3MQdQek7NNDFaSI=
-  app: scheckcheckui
-  domain: satspeedy
-  on:
-    repo: satspeedy/scheckcheck-ui
+#deploy:
+#  provider: openshift
+#  user: satspeedy@hotmail.com
+#  password:
+#    secure: qy8C6ZJ2osJGwZCvR9ZnhMDGsLQof0dp43uXtPWQRV7COyoemT6beHS2BwIYwGwZT7G4D4qAk5/jkPSHQ241zKK2N1ZEP25WY58Cl8O5Ayr7jiKt0WNIEi7MuNwtRp1p615AznsIiAcs1HfiHttb+SyS0QQYYUNSnWiHbozn+dpfkO+SMnRNnNelZ4QjEfyCMmLkSx2vbGiIYxLOGqIKEfpamAr1cisjIORP3U0BNS53BtGmYyeynHRm9vrVq6XDBwUEMYD6S3rT7CQ6sU7SnUWfjo2yr24fESvTe2wxUDSsg+V/4D+618sFk9iPXgY4uGY1/rjgmIYcSrf3MSTxmNCDaSStJcFy3trKc6YC6sgRJm0LIoVV0GVinuYlOwl1mfH6Z90ERjGbHMbq3hfcB1lI1lbkhS8Y7L8OnAE3MIWq7nkH9Zc0YCfs54uD8xb4Xv3U+SPQE6d/eBTx5nomIcVmFzvdnTbkCSaWmf9cjaxBo/kWfdyvNJCH/vw6pw5zpWiL8KZB1R6Gko5GzfzVMdFDEtwzhZl2dX4tlN6T6gKsboCVwpchqi1KBoH3tnhpNSNL1IKKSOrVOFsL9y/llvQ+VTPh1d3Hfzt0lv0/3jOfAzbuB9mJjOXRFJOM7eEbKKMtLo2dEyGsM075h9cQJoHwbrBE3MQdQek7NNDFaSI=
+#  app: scheckcheckui
+#  domain: satspeedy
+#  on:
+#    repo: satspeedy/scheckcheck-ui

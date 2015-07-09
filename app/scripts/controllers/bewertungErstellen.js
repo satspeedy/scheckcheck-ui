@@ -9,7 +9,7 @@
  */
 angular.module('scheckcheckUiApp')
   .controller('BewertungErstellenCtrl', function ($scope, $http) {
-    $http.get('http://localhost:8080/scheckcheck/resources/bildungstraeger').
+    $http.get('http://scheckcheck-satspeedy.rhcloud.com/resources/bildungstraeger').
       success(function(data) {
         $scope.bildungstraegers = data;
       });
@@ -17,7 +17,7 @@ angular.module('scheckcheckUiApp')
     $scope.werte = [1, 2, 3, 4, 5];
 
     $scope.changedValue = function(selectedBildungstraeger){
-      $http.get('http://localhost:8080/scheckcheck/resources/bildungsmassnahme/bildungstraeger/id/' + selectedBildungstraeger.id).
+      $http.get('http://scheckcheck-satspeedy.rhcloud.com/resources/bildungsmassnahme/bildungstraeger/id/' + selectedBildungstraeger.id).
         success(function(data) {
           $scope.bildungsmassnahmen = data;
         });
@@ -37,7 +37,7 @@ angular.module('scheckcheckUiApp')
           bewertungOrganisation : $scope.bewertungOrganisation,
           bewertungAusstattung : $scope.bewertungAusstattung
         };
-        var res = $http.post('http://localhost:8080/scheckcheck/resources/bewertung', bewertungObj);
+        var res = $http.post('http://scheckcheck-satspeedy.rhcloud.com/resources/bewertung', bewertungObj);
         res.success(function(data) {
           $scope.message = data;
         });
